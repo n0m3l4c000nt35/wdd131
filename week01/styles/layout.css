@@ -15,18 +15,23 @@ body {
 .parent {
   display: grid;
   height: 100vh;
-  grid-template: 100px auto 1fr 200px / auto auto auto auto;
+  grid-template: 150px 1fr 200px / auto auto auto auto;
 }
 
 header {
   grid-column: 1 / 5;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #464646;
 }
 
-nav {
+header p {
+  padding: 1rem;
+}
+
+header nav {
   display: flex;
-  grid-column: 1 / 5;
   background-color: #000;
 }
 
