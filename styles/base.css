@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgDarkColor: #28527a;
+  --bgDarkColorSecondary: #3b3b3b;
+  --lightFontColor: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  padding: 1.5rem;
+  background-color: var(--bgDarkColor);
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background: var(--bgDarkColorSecondary);
+}
+
+header nav a {
+  flex-grow: 1;
+  border: 3px solid transparent;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+header nav a:focus {
+  outline: none;
+  border-color: #494949;
+}
+
+header nav a:hover {
+  background: #494949;
+}
+
+header nav a:active {
+  background: #5e5e5e;
+  border-color: transparent;
+}
+
+main {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  column-gap: 1rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  padding: 1rem;
+  background: var(--bgDarkColor);
+  color: var(--lightFontColor);
+  text-align: center;
+}
+
+.card:first-child {
+  grid-column: 1 / 3;
+}
+
+.card:last-child {
+  grid-column: 3 / 4;
+}
+
+.card-border {
+  border: 1px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.card-content img {
+  max-width: 300px;
+  height: auto;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.5rem;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.card ul li a:hover {
+  color: #3b3b3b;
+}
+
+.title-place {
+  width: 80%;
+  margin-inline: auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+  text-align: center;
+}
+
+figcaption {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer {
+  padding: 1.5rem;
+  background: var(--bgDarkColor);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+footer .highlighted {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light-font-color {
+  color: var(--lightFontColor);
+}
+
+.highlighted {
+  color: yellow;
+}
