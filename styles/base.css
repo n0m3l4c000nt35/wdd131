@@ -124,7 +124,7 @@ figcaption {
 
 footer {
   padding: 1.5rem;
-  background: var(--bgDarkColor);
+  background-color: var(--bgDarkColor);
   font-size: 1.25rem;
   text-align: center;
 }
