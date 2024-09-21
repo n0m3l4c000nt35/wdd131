@@ -2,16 +2,12 @@ const $year = document.querySelector("#currentyear");
 const $lastModified = document.querySelector("#lastModified");
 
 function calculateWindChill(temperature, windSpeed) {
-  if (temperature <= 10 && windSpeed > 4.8) {
-    return (
-      13.12 +
-      0.6215 * temperature -
-      11.37 * Math.pow(windSpeed, 0.16) +
-      0.3965 * temperature * Math.pow(windSpeed, 0.16)
-    );
-  } else {
-    return "N/A";
-  }
+  return (
+    13.12 +
+    0.6215 * temperature -
+    11.37 * Math.pow(windSpeed, 0.16) +
+    0.3965 * temperature * Math.pow(windSpeed, 0.16)
+  );
 }
 
 function updateWindChill() {
@@ -23,9 +19,12 @@ function updateWindChill() {
   );
   const windChillElement = document.getElementById("windChill");
 
-  const windChill = calculateWindChill(temperature, windSpeed);
-  windChillElement.textContent =
-    typeof windChill === "number" ? windChill.toFixed(1) + "°C" : windChill;
+  if (temperature <= 10 && windSpeed > 4.8) {
+    const windChill = calculateWindChill(temperature, windSpeed);
+    windChillElement.textContent = windChill.toFixed(1) + "°C";
+  } else {
+    windChillElement.textContent = "N/A";
+  }
 }
 
 const today = new Date();
