@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="W03 Assignment - WDD 131: Dynamic Web Fundamentals - Esteban Zárate">
+  <title>W03 Assignment - Place</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+  <main>
+    <section id="hero">
+      <picture>
+        <source srcset="images/chameleon.webp" media="(max-width: 680px)">
+        <source srcset="images/lemur.webp" media="(max-width: 1000px)">
+        <img src="images/fossa.webp" alt="Fossa" width="563" height="600">
+      </picture>
+    </section>
+    <section id="data" class="sectable">
+      <h2 class="title">Data</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Area:</th>
+            <td>587.041 sq km</td>
+          </tr>
+          <tr>
+            <th>Population:</th>
+            <td>27,691,018</td>
+          </tr>
+          <tr>
+            <th>Capital:</th>
+            <td>Antananarivo</td>
+          </tr>
+          <tr>
+            <th>Languages:</th>
+            <td>Malagasy, French</td>
+          </tr>
+          <tr>
+            <th>Currency:</th>
+            <td>Malagasy Ariary</td>
+          </tr>
+          <tr>
+            <th>Time Zone:</th>
+            <td>UTC+3</td>
+          </tr>
+          <tr>
+            <th>Calling Code:</th>
+            <td>+261</td>
+          </tr>
+          <tr>
+            <th>Internet TLD:</th>
+            <td>.mg</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="weather" class="sectable">
+      <h2 class="title">Weather</h2>
+      <img class="weather" src="images/weather-icon.svg" alt="Weather" width="25" height="25">
+      <table>
+        <tbody>
+          <tr>
+            <th>Temperature:</th>
+            <td id="temperature">10°C</td>
+          </tr>
+          <tr>
+            <th>Conditions:</th>
+            <td>Partly Cloudy</td>
+          </tr>
+          <tr>
+            <th>Wind:</th>
+            <td id="windSpeed">5 km/h</td>
+          </tr>
+          <tr>
+            <th>Wind Chill:</th>
+            <td id="windChill"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐
+    </p>
+    <p>Madagascar</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
