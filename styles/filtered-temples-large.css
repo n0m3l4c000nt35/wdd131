@@ -1,0 +1,29 @@
+@media screen and (min-width: 680px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav a:hover {
+    background-color: unset;
+    text-decoration: underline;
+  }
+
+  header span {
+    display: none;
+  }
+
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
