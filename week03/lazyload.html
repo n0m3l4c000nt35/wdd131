@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="Lazy Loading Example">
+  <title>Lazy Loading Example</title>
+  <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lazy Loading Example</h1>
+  </header>
+  <main>
+    <img src="https://via.placeholder.com/400x600?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="600"
+      loading="lazy">
+    <img src="https://via.placeholder.com/400x650?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="650"
+      loading="lazy">
+    <img src="https://via.placeholder.com/400x700?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="700"
+      loading="lazy">
+    <img src="https://via.placeholder.com/400x750?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="750"
+      loading="lazy">
+    <img src="https://via.placeholder.com/400x800?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="800"
+      loading="lazy">
+    <img src="https://via.placeholder.com/400x850?text=Best+Placeholder+Ever" alt="Placeholder" width="400" height="850"
+      loading="lazy">
+  </main>
+  <footer class="light-font-color">
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐ Buenos Aires, Argentina
+    </p>
+    <p id="lastModified" class="highlighted"></p>
+  </footer>
+  <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>

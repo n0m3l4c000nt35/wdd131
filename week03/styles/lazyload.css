@@ -1,0 +1,17 @@
+img {
+  margin-inline: auto;
+  display: block;
+  margin-bottom: 1rem;
+  background-color: #000;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
