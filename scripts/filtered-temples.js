@@ -123,13 +123,9 @@ function displayTemples(temples) {
 function filterTemples(criteria) {
   switch (criteria) {
     case "old":
-      return temples.filter(
-        temple => parseInt(temple.dedicated.split(", ")[0]) < 1900
-      );
+      return temples.filter(temple => parseInt(temple.dedicated.split(", ")[0]) < 1900);
     case "new":
-      return temples.filter(
-        temple => parseInt(temple.dedicated.split(", ")[0]) > 2000
-      );
+      return temples.filter(temple => parseInt(temple.dedicated.split(", ")[0]) > 2000);
     case "large":
       return temples.filter(temple => temple.area > 90000);
     case "small":
@@ -143,6 +139,7 @@ document.querySelectorAll("#navBar a").forEach(link => {
   link.addEventListener("click", event => {
     event.preventDefault();
     const criteria = event.target.id;
+    document.querySelector("#mainTitle").textContent = criteria.charAt(0).toUpperCase() + criteria.slice(1);
     const filteredTemples = filterTemples(criteria);
     displayTemples(filteredTemples);
   });
