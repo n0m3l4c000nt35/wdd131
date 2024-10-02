@@ -9,7 +9,7 @@
   --lightColor: #fff;
   --mainColor: #3a013a2f;
   --fontFamily: "Roboto", system-ui;
-  --secondColor: blue;
+  --secondColor: rgb(0, 0, 124);
 }
 
 body {
@@ -94,7 +94,7 @@ header h1 {
 }
 
 .mt {
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .checkAll {
