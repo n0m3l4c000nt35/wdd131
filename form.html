@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Esteban Zárate">
+  <meta name="description" content="W05 Assignment: Product Review Form - WDD 131: Dynamic Web Fundamentals">
+  <title>Product Review Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+    <form action="review.html" method="get" class="productReviewForm">
+      <div class="dataForm">
+        <label class="labelForm">Product name
+          <select name="productName" id="productName" required autofocus>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </label>
+      </div>
+      <div class="dataForm">
+        <p class="labelForm">Overall Rating</p>
+        <div class="ratingContainer">
+          <label>&star;
+            <input type="radio" name="overallRating" id="oneStar" value="1" required>
+          </label>
+          <label>&star;&star;
+            <input type="radio" name="overallRating" id="twoStar" value="2" required>
+          </label>
+          <label>&star;&star;&star;
+            <input type="radio" name="overallRating" id="threeStar" value="3" required>
+          </label>
+          <label>&star;&star;&star;&star;
+            <input type="radio" name="overallRating" id="fourStar" value="4" required>
+          </label>
+          <label>&star;&star;&star;&star;&star;
+            <input type="radio" name="overallRating" id="fiveStar" value="5" required>
+          </label>
+        </div>
+      </div>
+      <div class="dataForm">
+        <label class="labelForm">Date of Installation
+          <input type="date" name="installationDate" id="installationDate" required>
+        </label>
+      </div>
+      <div class="dataForm">
+        <p class="labelForm">Which features did you useful in the product?</p>
+        <p class="checkAll">(Check all that apply)</p>
+        <label class="mt">
+          <input type="checkbox" name="usefulFeatures" id="durability" value="durability">Durability
+        </label>
+        <label>
+          <input type="checkbox" name="usefulFeatures" id="easeUse" value="easeUse">Ease of Use
+        </label>
+        <label>
+          <input type="checkbox" name="usefulFeatures" id="performance" value="performance">Performance
+        </label>
+        <label>
+          <input type="checkbox" name="usefulFeatures" id="design" value="design">Design
+        </label>
+      </div>
+      <div class="dataForm">
+        <label class="labelForm">Written Review <span class="optional">(Optional)</span>
+          <textarea name="writtenReview" id="writtenReview" rows="7"></textarea>
+        </label>
+      </div>
+      <div class="dataForm">
+        <label class="labelForm">Your Name <span class="optional">(Optional)</span>
+          <input type="text" id="userName" name="userName">
+        </label>
+      </div>
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> ⭐ Esteban Zárate ⭐ Buenos Aires, Argentina
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+
+</html>

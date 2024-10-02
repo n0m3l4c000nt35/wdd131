@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkColor: #3a013a;
+  --lightColor: #fff;
+  --mainColor: #3a013a2f;
+  --fontFamily: "Roboto", system-ui;
+  --secondColor: blue;
+}
+
+body {
+  font-family: var(--fontFamily);
+}
+
+header {
+  background-color: var(--darkColor);
+}
+
+header h1 {
+  padding: 1rem;
+  color: var(--lightColor);
+  text-align: center;
+}
+
+.productReviewForm {
+  padding: 1rem;
+  background-color: var(--mainColor);
+}
+
+.productReviewForm label {
+  display: block;
+}
+
+.productReviewForm input[type="text"],
+.productReviewForm input[type="date"] {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  border: none;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+}
+
+.productReviewForm input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 400px;
+  width: 100%;
+}
+
+.ratingContainer label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.productReviewForm textarea {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 0.25rem;
+  border: none;
+  padding: 0.5rem;
+  font-family: var(--fontFamily);
+  resize: none;
+}
+
+.productReviewForm select {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  border: none;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.dataForm {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.labelForm {
+  font-weight: 500;
+}
+
+.mt {
+  margin-top: 0.25rem;
+}
+
+.checkAll {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.optional {
+  color: var(--secondColor);
+}
+
+.productReviewForm input[type="submit"] {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+  text-align: center;
+}
+
+footer p:first-child {
+  margin-bottom: 0.5rem;
+}
