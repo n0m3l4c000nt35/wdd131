@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Esteban Zárate">
+    <title>Virtual Band Rehearsal Room</title>
+    <meta name="description"
+        content="Book rehearsal spaces, check schedules, and stay updated with local music community news at Virtual Band Rehearsal Room.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <button id="menuToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Welcome to Virtual Band Rehearsal Room</h1>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Virtual Band Rehearsal Room is your go-to hub for all things related to band rehearsals. We provide
+                top-notch rehearsal spaces, flexible scheduling, and a platform for the local music community to connect
+                and share news.</p>
+        </section>
+
+        <section id="features">
+            <h2>Our Features</h2>
+            <ul>
+                <li>State-of-the-art rehearsal rooms</li>
+                <li>Online booking system</li>
+                <li>Community news and events</li>
+                <li>Flexible scheduling options</li>
+            </ul>
+        </section>
+
+        <section id="rehearsalRooms">
+            <h2>Our Rehearsal Rooms</h2>
+            <div class="roomGallery">
+                <figure>
+                    <img src="images/small-room.webp" alt="Small Rehearsal Room" width="300" height="200"
+                        loading="lazy">
+                    <figcaption>Small Room (up to 4 people)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/medium-room.webp" alt="Medium Rehearsal Room" width="300" height="200"
+                        loading="lazy">
+                    <figcaption>Medium Room (up to 6 people)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/large-room.webp" alt="Large Rehearsal Room" width="300" height="200"
+                        loading="lazy">
+                    <figcaption>Large Room (up to 10 people)</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Band Rehearsal Room. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

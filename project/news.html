@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Esteban Zárate">
+    <title>News - Virtual Band Rehearsal Room</title>
+    <meta name="description"
+        content="Stay updated with the latest news and events from the local music community at Virtual Band Rehearsal Room.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <button id="menuToggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="news.html" class="active">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Music Community News</h1>
+        <h2>Latest Updates</h2>
+        <section id="newsFeed"></section>
+        <section id="submitNews">
+            <h2>Submit Your News</h2>
+            <form id="newsSubmissionForm">
+                <label for="newsTitle">Title:</label>
+                <input type="text" id="newsTitle" name="newsTitle" required>
+
+                <label for="newsContent">Content:</label>
+                <textarea id="newsContent" name="newsContent" rows="7" required></textarea>
+
+                <button type="submit">Submit News</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Virtual Band Rehearsal Room. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

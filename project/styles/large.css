@@ -1,0 +1,83 @@
+@media (min-width: 600px) {
+  #menuToggle {
+    display: none;
+  }
+
+  #mainNav {
+    position: static;
+    display: block;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .roomGallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .roomGallery figure {
+    flex-basis: calc(33.333% - 1rem);
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: revert;
+  }
+
+  thead tr {
+    position: static;
+  }
+
+  th {
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #444444;
+    color: #fff;
+  }
+
+  tbody tr:nth-child(odd) td {
+    background-color: #505050;
+    color: #fff;
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: #b1b1b1;
+    color: #000;
+  }
+
+  tr {
+    margin-bottom: 0;
+  }
+
+  td {
+    padding-left: 0.75rem;
+    text-align: center;
+    color: #fff;
+    background-color: unset;
+  }
+
+  td:nth-child(odd) {
+    background-color: unset;
+  }
+
+  td:before {
+    content: none;
+  }
+}
