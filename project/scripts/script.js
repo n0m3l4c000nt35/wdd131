@@ -87,6 +87,8 @@ const displayLatestNews = () => {
   const news = JSON.parse(localStorage.getItem("news")) || [];
   const latestNews = news.slice(-3).reverse();
 
+  newsContainer.innerHTML = "";
+
   latestNews.forEach(item => {
     const article = document.createElement("article");
     article.classList.add("newsItem");
